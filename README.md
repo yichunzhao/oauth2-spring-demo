@@ -3,7 +3,7 @@ Demo Spring Security OAuth 2
 
 *Terms*
 
-* Resource owner: you own a google dirver account. 
-* Resource sever: fx: your photoes stored on the google driver, which responsible for making sure the accessing your photoes athorized.  
-* client(thrid party): on the behalf of you to access your photoes stored on the google drive, for instance, so as to print them out. 
+* Resource owner: a google dirver account owner. 
+* Resource sever: fx: photoes stored on a Google driver, which responsible for making sure the accessing photoes that must be authorized.  
+* Client(thrid party): on the behalf of resource owner to access photoes stored in the Google drive, so as to print them out. 
 * Authorization Server: the server issuing access token to the client. 
