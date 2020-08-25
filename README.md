@@ -23,9 +23,9 @@ It needs to understand terms first and then knowing parties involved in the OAut
 * Client credentials grant is useful in system-to-system com. 
 
 *CommonOAuth2Provider*
-* Provides native support for connecting to Okta,Google,Github,and Facebook;those auth providers. 
+* Provides native support for connecting to Okta, Google, Github, and Facebook; those auth providers. 
 * Property-based configuration in Spribg boot. 
-* Client-side OAuth integration, fx: third party login operation service, then clients don't need keep client profile data by themselves; released from the risks being hacked. 
+* Client-side OAuth integration, fx: third party login operation, then clients don't need keep sensitive profile data by themselves; released from the risks being hacked. 
 
 *Authorization Server* 
 * Provides authorization service; many company may need to have internally. 
