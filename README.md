@@ -12,9 +12,9 @@ It needs to understand terms first and then knowing parties involved in the OAut
 
 *Token types*
 
-*Access token-the secret and often short-lived token that uniquely identifies a user
-*Referesh token-it is used to refresh access token having a longer-lived token; for instance, an access token lasts one day; but an refresh token may last a week; after one week, you have to apply for a new access token.
-*Scope it is associated with the access token, providing rights like permissions, auhtorities. 
+* Access token: the secret and often a short-lived token that uniquely identifies a user
+* Referesh token: it is a longer-lived token used to refresh access token; for instance, an access token lasts one day; but an refresh token may last a week; after one week, you have to apply for a new access token.
+* Scope: associated with the access token, providing rights: meaning that permissions, auhtorities. 
 
 *Grants*
 
