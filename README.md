@@ -26,3 +26,21 @@ It needs to understand terms first and then knowing parties involved in the OAut
 * Provides native support for connecting to Okta,Google,Github,and Facebook;those auth providers. 
 * Property-based configuration in Spribg boot. 
 * Client-side OAuth integration, fx: third party login operation service, then clients don't need keep client profile data by themselves; released from the risks being hacked. 
+
+*Authorization Server* 
+* Provides authorization service; many company may need to have internally. 
+* `@EnableAuthorizationServer`
+* Customer Auth-configuation is plugged into Spring framework via Adapter, i.e. `AuthorizationServerConfigurerAdapter`
+* Supporting differnt grant types by the same configuration
+
+*Resource Serverr*
+* the host that stored the protected data
+* Configuring a resource server: `@EnableResourceServer`
+
+*OAuth-2 Client*
+* Full client-side support
+* `@EnableOauth2Client`
+* Using specific resttemplate(`Oauth2RestTemplate`) to connecting to 
+
+
+
