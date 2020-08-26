@@ -38,7 +38,7 @@ public class GuestService {
 
     public void delete(Long id) {
         findById(id);
-        repository.existsById(id);
+        repository.deleteById(id);
     }
 
 }
