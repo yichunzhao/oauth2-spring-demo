@@ -3,7 +3,6 @@ package com.ynz.oauth2demo.controller;
 import com.ynz.oauth2demo.dto.GuestDto;
 import com.ynz.oauth2demo.dto.GuestMapper;
 import com.ynz.oauth2demo.repo.Guest;
-import com.ynz.oauth2demo.repo.GuestRepository;
 import com.ynz.oauth2demo.service.GuestService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -29,7 +28,6 @@ import static java.util.stream.Collectors.toList;
 @RequiredArgsConstructor
 @Slf4j
 public class GuestController {
-    private final GuestRepository repository;
     private final GuestService service;
 
     @GetMapping
