@@ -1,7 +1,6 @@
 package com.ynz.oauth2demo.auth;
 
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
