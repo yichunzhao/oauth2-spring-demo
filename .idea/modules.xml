@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/guest-app/guest-app.iml" filepath="$PROJECT_DIR$/guest-app/guest-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/guest-services/guest-services.iml" filepath="$PROJECT_DIR$/guest-services/guest-services.iml" />
       <module fileurl="file://$PROJECT_DIR$/oauth2-spring-demo.iml" filepath="$PROJECT_DIR$/oauth2-spring-demo.iml" />
     </modules>
