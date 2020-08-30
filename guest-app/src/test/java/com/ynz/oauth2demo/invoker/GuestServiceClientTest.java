@@ -1,7 +1,6 @@
 package com.ynz.oauth2demo.invoker;
 
 import com.ynz.oauth2demo.dto.GuestDto;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -36,7 +35,6 @@ class GuestServiceClientTest {
     }
 
     @Test
-    @Disabled
     public void testAddGuest() {
         GuestDto guest = GuestDto.builder().state("XX").phoneNumber("12345678").lastName("Zhao").firstName("Yichun")
                 .emailAddress("ynz@mail.com").country("US").build();

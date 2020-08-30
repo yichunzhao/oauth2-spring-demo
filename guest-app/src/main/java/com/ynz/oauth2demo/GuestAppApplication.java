@@ -4,7 +4,6 @@ import com.ynz.oauth2demo.invoker.GuestServiceClient;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -21,7 +20,7 @@ import java.util.Arrays;
 @SpringBootApplication
 @EnableOAuth2Client
 @Slf4j
-public class GuestAppApplication implements CommandLineRunner {
+public class GuestAppApplication {
     private static final String AUTH_TOKEN_URL = "/oauth/token";
 
     @Value("${guests.host}")
@@ -29,7 +28,6 @@ public class GuestAppApplication implements CommandLineRunner {
 
     @Autowired
     private GuestServiceClient client;
-
 
     public static void main(String[] args) {
         SpringApplication.run(GuestAppApplication.class, args);
@@ -48,10 +46,4 @@ public class GuestAppApplication implements CommandLineRunner {
         return new OAuth2RestTemplate(resourceDetails, new DefaultOAuth2ClientContext(request));
     }
 
-    @Override
-    public void run(String... args) throws Exception {
-        client.findAll();
-        log.info("all guests: " + client.findAll());
-
-    }
 }
