@@ -41,7 +41,8 @@ public class GuestController {
     @PostMapping
     public ResponseEntity<GuestDto> addGuest(@RequestBody GuestDto guestDto) {
         Guest persisted = service.persist(GuestMapper.instance().map(guestDto));
-        URI location = ServletUriComponentsBuilder.fromCurrentRequest().pathSegment("/{id}").buildAndExpand(persisted.getId()).toUri();
+        URI location = ServletUriComponentsBuilder.fromCurrentRequest()
+                .pathSegment("/{id}").buildAndExpand(persisted.getId()).toUri();
         return ResponseEntity.created(location).body(GuestMapper.instance().inverse(persisted));
     }
 

@@ -15,7 +15,10 @@ public class SecConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication().passwordEncoder(NoOpPasswordEncoder.getInstance())
-                .withUser("test").password("test").roles("USER");
+                .withUser("test").password("test").roles("USER")
+                .and()
+                .withUser("foo").password("foo").roles("USER", "ADMIN")
+        ;
     }
 
     @Override
@@ -24,6 +27,7 @@ public class SecConfig extends WebSecurityConfigurerAdapter {
 
         http.authorizeRequests().antMatchers("/")
                 .permitAll()
+                .antMatchers("/guests/**").hasRole("ADMIN")
                 .anyRequest()
                 .authenticated()
                 .and()
