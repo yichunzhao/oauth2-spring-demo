@@ -1,5 +1,15 @@
 # oauth2-spring-demo
 
+OAuth-2 is a delegation protocol, just like delegating a car parking to a hotel assistant. 
+
+OAuth-2 is about authorization alone,  just like a master key and a valet key. It authorizes the assistnt a limited permission to start the car so as to park it for its owner. 
+
+OAuth is mainly for authorization between services, especially between microservices.  It is called Client Credentials Flow(one of three OAuth flow), when the client is well trusted (confidential clients).  
+
+Ther code here illustrates the flow 3. microservice(guest-app), asking for guests from another microservice(guests-service), which is protected by a Auth-server. 
+(1) guest-app asking auth-server for an access-token by client-id and secret. (2) auth-server validtes and then sends back a token.
+(3) guest-app using the token to invoke the guest-service and retreiving guests. 
+
 Demo Spring Security OAuth 2 
 
 It needs to understand terms first and then knowing parties involved in the OAuth-2; then may reduce confusions. 
