@@ -27,6 +27,7 @@ It needs to understand terms first and then knowing parties involved in the OAut
 * Scope: associated with the access token, providing rights: meaning that permissions, auhtorities. 
 
 *Grants*
+
 In OAuth 2.0, the term “grant type” refers to the way an application gets an access token. 
 
 * Authorisation code grant
